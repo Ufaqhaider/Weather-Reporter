@@ -12,7 +12,7 @@ class Weather():
 
         self.url = "http://api.openweathermap.org/data/2.5/weather?q="
         self.cityname = self.loc.get(1.0, END)
-        self.api_key = 'f82ef01651e44d1b5e46a382c90b57f6'
+        self.api_key = 'GO to the url above and sign up to get the api_key'
         self.data = requests.get(self.url + self.cityname + '&appid=' + self.api_key).json()
 
         if self.data['cod'] == '404':
